@@ -1,0 +1,97 @@
+<head>
+  <title>Kirk Kohler's Website & Portfolio</title>
+
+  <meta charset="utf-8">
+  <!-- is viewport necessary with bootstrap? -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Website on Software Development and HTML Demos | KirkKohler.com">
+  <meta name="author" content="Kirk Robert Kohler">
+</head>
+
+<body>      
+  <nav>
+    <div class="navbar pull-left offset1">
+      <a class="brand" href="#">KirkKohler.com</a>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#"><i class="icon-home"></i> Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blogs
+            <b class="caret"></b>
+          </a>
+          <ul>
+            <li><a href="http://kirkkohlerblog.blogspot.com/">Personal/Programming</a></li>
+            <li><a href="http://kirkkohlerphoto.blogspot.com/">Photography</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+  <div class="hero-unit row span10 offset1">
+    <h1>Welcome</h1>
+    <p>You will find links to my personal projects as well as my blogs and social networks.  Please contact me via linkedin for any contracting inquiries.</p>
+    <!--img src="kirkbanner.jpg" alt="banner image of my face" /-->
+  </div>
+
+  <ul class="thumbnails span10 offset2 row">
+    <li class="span4">
+      <div class="thumbnail">
+        <a href="http://www.linkedin.com/in/kirkkohler">
+          <img src="http://placekitten.com/g/300/200" alt="cat pic from placekitten.com" />
+          <h3>LinkedIn</h3>
+          <p>Most recent work history</p>
+        </a>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <a href="http://kirkkohlerphoto.blogspot.com/">
+          <img src="http://placekitten.com/g/300/200" alt="cat pic from placekitten.com" />
+          <h3>Photography Blog</h3>
+          <p>Stories about my fun and adventures in photography</p>
+        </a>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <a href="http://kirkkohlerphoto.blogspot.com/">
+          <img src="http://placekitten.com/g/300/200" alt="cat pic from placekitten.com" />
+          <h3>Photography Blog</h3>
+          <p>Stories about my fun and adventures in photography</p>
+        </a>
+      </div>
+    </li>
+  </ul>  
+
+<div class="row-fluid span12">
+  {{> footer}}
+</div>
+   
+	<br />
+  	<br />
+    <br />
+
+  <img src="http://thecatapi.com/api/images/get?format=src&type=gif" alt="cat pics from thecatapi.com" />
+
+  <br /><br />
+  
+<!--
+  {{loginButtons}}
+-->
+
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}  
+  <input type="button" value="Click" class="btn btn-success" />
+</template>
+
+<template name="footer">
+  <footer>
+    <p>&copy; 2013 | <a href="#">http://KirkKohler.com</a></p>
+    <p><a href="#">About</a> | <a href="http://kirkkohlerblog.blogspot.com/">Personal Blog</a> | <a href="http://kirkkohlerphoto.blogspot.com/">Photography Blog</a> | <a href="http://www.linkedin.com/in/kirkkohler">My LinkedIn</a> | <a href="https://twitter.com/kirkkohler">My Twitter</a> | <a href="https://plus.google.com/111034133342344552343/posts">Google+</a></p>
+    <p>Huge thank you to the following projects which helped in making this site fun to develop, <a href="http://meteor.com">Meteor</a> and <a href="http://getbootstrap.com/">Bootstrap</a></p>
+  </footer>  
+</template>

@@ -1,0 +1,16 @@
+/* CSS declarations go here
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+    height: 100%;  
+	padding-left: 5px;
+	padding-right: 5px;
+}
+*/
+body {
+    background: #bbbbbb;
+    color: #333333;
+}
